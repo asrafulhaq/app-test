@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    background-color: #ccc;
+}
+
+.clock {
+    width: 400px;
+    height: 400px;
+    background-color: #fff;
+    margin: 200px auto 0;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clock::before {
+    content:'';
+
+    width: 20px;
+    height: 20px;
+    background-color: #333;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.s {
+    width: 0;
+    height: 300px;
+    transform: rotate(0deg);
+    display: flex;
+    justify-content: center;
+}
+
+.s::before {
+    content : '';
+    width: 4px;
+    height: 170px;
+    background-color: #000;
+    position: absolute;
+}
